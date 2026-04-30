@@ -54,3 +54,25 @@ return 0;
       cout<<isEquilTri<<endl;
       return 0;
   }
+
+------------------------------------------------------------------------------
+
+// PRB 4 : SWAP VALUES
+  
+  
+   #include <iostream>
+  using namespace std;
+  
+  int main(){
+      int a;
+      int b;
+      cin>>a>>b;
+      
+      int temp = a;
+      a = b;
+      b = temp;
+      
+      cout<<a<<"\n"<<b<<endl;
+      return 0;
+  }
+  
