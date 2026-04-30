@@ -156,3 +156,35 @@ int main (){
     return 0;
 }
   
+-----------------------------------------------------------------------
+
+HOME WORK
+-----------------------------------------------------------------------
+// PRG 8 - AGE GROUP CLASSIFIER
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int age;
+
+cout<<"ENTER AGE :";
+cin>>age;
+
+if(age<=12){
+    cout<<"INFANT";
+}
+    else if(age<=19){
+        cout<<"TEENAGER";
+    }
+    
+    else if (age<=45){
+        cout<<"ADULT";
+    }
+    
+    else {
+        cout<<"OLD PERSON"<<endl;
+    }
+    return 0;
+}
