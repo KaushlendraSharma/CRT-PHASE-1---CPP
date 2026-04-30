@@ -15,3 +15,23 @@ cout<< fahrenheit<<endl;
 return 0;
 
 }
+
+-------------------------------------------------------------------------------------
+
+// GLOBAL VS LOCAL VARIABLE
+
+   #include <iostream>
+  using namespace std;
+
+   int globalVariable = 100;
+
+   int main(){
+    //local variable
+    int UserInput;
+    float result;
+    cin >> UserInput;
+    result = (double)globalVariable / UserInput;
+    cout<<result<<endl;
+    return 0;
+    
+}
