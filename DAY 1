@@ -129,4 +129,30 @@ return 0;
       
       return 0;
   }
+
+-----------------------------------------------------------------------
+
+// PRB 6 : Login Credential programming
+
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    
+    const int userID = 1329;
+    const int password = 2929;
+    
+    int inputID ;
+    int inputPassword;
+    cout<<"Enter your ID here";
+    cin>>inputID;
+    cout<<"Enter your ID here";
+    cin>>inputPassword;
+    
+    bool isGranted = (userID==inputID) && (password==inputPassword);
+    cout<<"ACCESS IS GRANTED "<<isGranted<<endl;
+    cout<<"ACCESS IS DENIED "<< !isGranted<<endl;
+    return 0;
+}
   
