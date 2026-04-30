@@ -75,4 +75,38 @@ return 0;
       cout<<a<<"\n"<<b<<endl;
       return 0;
   }
+  ----------------------------------------------------------------------
+// PRB 5 ; AREA OF SHAPES
+  
+  
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+      int choice;
+      
+      cin >> choice;
+      
+      if(choice == 1){
+          double radius;
+          cin>>radius;
+          cout<<"AREA OF RECTANGLE IS : "<<3.14*radius*radius<<endl;
+      }
+     else if(choice==2){
+         double lenght;
+         double  width;
+         cin>>lenght>>width;
+         cout<<"AREA OF RECTANGLE IS : "<<lenght*width<<endl;
+     }
+     else if(choice==3){
+         double  lenght;
+         double breadth;
+         cin>>lenght>>breadth;
+         cout<<"AREA OF TRIANGLE IS : "<<0.5*lenght*breadth<<endl;
+     }
+     else {
+         cout<<"INVALID CHOICE"<<endl;
+     }
+     return 0;
+  }
   
