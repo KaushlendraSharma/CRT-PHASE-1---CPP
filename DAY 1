@@ -188,3 +188,35 @@ if(age<=12){
     }
     return 0;
 }
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+// PRG 9  - ALPHABET CASE CHECKER
+
+
+
+   #include <iostream>
+   
+   using namespace std;
+   
+   int main (){
+       
+       char Alphabet;
+       
+       cout<<"ENTER CHARACTER : ";
+       cin>>Alphabet;
+       
+       if ('A' <= Alphabet && Alphabet <='Z'){
+           cout<<"UPPER CASE ALPHABET";
+       }
+       
+      else if ('a' <= Alphabet && Alphabet <='z'){
+           cout<<"LOWER CASE ALPHABET";
+       }
+       else {
+           cout<<"NOT A ALPHABET"<<endl;
+       }
+      
+       return 0;
+   }
