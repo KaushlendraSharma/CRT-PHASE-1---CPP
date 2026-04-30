@@ -109,4 +109,24 @@ return 0;
      }
      return 0;
   }
+
+---------------------------------------------------------------------------
+
+// PRB 6 : AVERAGE AND SUM
+  
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+      int a; 
+      int b; 
+      int c ;
+      
+      cin>>a>>b>>c;
+      int sum = a+b+c;
+      float Avg = sum/3.0;
+      cout<<"SUMMATION IS : "<<sum<<"\n"<<"AVERAGE IS : "<<Avg<<endl;
+      
+      return 0;
+  }
   
