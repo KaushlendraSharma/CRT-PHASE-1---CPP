@@ -1,3 +1,4 @@
+// PRB 1
 // Temperature conversion
 // Take input int the form of celsius and convert it into fahrenheit
 
@@ -18,7 +19,7 @@ return 0;
 
 -------------------------------------------------------------------------------------
 
-// GLOBAL VS LOCAL VARIABLE
+// PRB 2 : GLOBAL VS LOCAL VARIABLE
 
    #include <iostream>
   using namespace std;
@@ -35,3 +36,21 @@ return 0;
     return 0;
     
 }
+
+-------------------------------------------------------------------------------
+
+// PRB 3 : LOGICAL & RELATIONAL OPERATOR
+
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+      int side1 , side2 , side3;
+      
+      cin >> side1>>side2>>side3;
+      
+      bool isEquilTri = (side1>0) && (side1==side2) && (side2==side3);
+      
+      cout<<isEquilTri<<endl;
+      return 0;
+  }
