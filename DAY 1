@@ -132,7 +132,7 @@ return 0;
 
 -----------------------------------------------------------------------
 
-// PRB 6 : Login Credential programming
+// PRB 7 : Login Credential programming
 
 
 #include <iostream>
