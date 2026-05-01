@@ -83,4 +83,45 @@ int main (){
     cout<<MaxNumber;
      return 0;
 }
+----------------------------------------------------------------------
+//problem 5 -- Continue statement
+//print 1-n and avoid those numbers whoch are not divisible by 3
 
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cin>>n;
+   
+   for(int i =1; i<=n; i++){
+       if(i%3==0){
+           continue;
+       }
+       cout << i << " ";
+   }
+   cout << "\n";
+   return 0;
+}
+
+---------------------------------------------------------------------
+// PRB 6 -- BREAK STATEMENT
+// ADD NUMBER UNTILL WE GET A NEGATIVE NUMBER
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+     int n;
+     int sum = 0;
+     while(true){
+         cin>>n;
+         if(n<0){
+             break;
+         }
+         sum = sum+n;
+     }
+     cout<<sum;
+     return 0;
+}
