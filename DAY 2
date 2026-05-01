@@ -1,1 +1,15 @@
-
+// PROB - 1 [IF CONDITION] (VOTING ELIGIBILITY)
+ 
+  #include <iostream>
+  using namespace std;
+  
+  int main(){
+      
+      int age;
+      cin>>age;
+      
+      if (age>=18){
+            cout<<"ELIGIBLE FOR VOTE"<<endl;
+      }
+      return 0;
+  }
