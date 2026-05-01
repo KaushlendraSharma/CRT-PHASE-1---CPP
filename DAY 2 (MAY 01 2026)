@@ -53,7 +53,7 @@ int main() {
 	    cout<<"ADULT";
 	}
 	else {
-	    cout<<"SENIOR CITIZEN";
+	    cout<<"ADULT (SENIOR CITIZEN)";
 	}
 	}
 	else {
