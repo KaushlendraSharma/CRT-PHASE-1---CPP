@@ -35,3 +35,34 @@ int main() {
 	}
 	return 0;
 }
+
+------------------------------------------------------------------------------------
+
+// PROB - 3 [ NESTED IF-ELSE CONDITION] (AGE GROUP CHECK)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int age;
+	cin>>age;
+
+	if (age>=18) {
+	    if (age<=55){
+	    cout<<"ADULT";
+	}
+	else {
+	    cout<<"SENIOR CITIZEN";
+	}
+	}
+	else {
+	    if (age<=12){
+	        cout<<"I'M CHILD";
+	    }
+	    else {
+    cout<<"I'M TEENAGER"<<endl;
+	    }
+	}
+	return 0;
+}
