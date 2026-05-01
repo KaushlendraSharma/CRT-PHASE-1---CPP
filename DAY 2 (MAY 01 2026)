@@ -66,3 +66,21 @@ int main() {
 	}
 	return 0;
 }
+--------------------------------------------------------------------------------------
+
+// PROB - 4 -TERNARY operator
+// FIND THE GREATER NUMBER AMONG 2
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    int a, b;
+    
+    cin>>a>>b;
+    int MaxNumber = (a>b)?a:b;
+    
+    cout<<MaxNumber;
+     return 0;
+}
+
