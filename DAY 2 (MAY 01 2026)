@@ -125,3 +125,75 @@ int main()
      cout<<sum;
      return 0;
 }
+
+-----------------------------------------------------------------------------
+
+// PROBLEM STATEMENT - 7 (Smart Home Lightning system)
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    string DayOrNight;
+    bool MotionDetected;
+    
+    cout<< "Is it Day or Night? : ";
+    cin>>DayOrNight;
+    cout<<"Is Motion Detected? (1 For Yes , 0 For No): ";
+    cin>>MotionDetected;
+    
+    if (DayOrNight == "Night" || DayOrNight=="night"){
+        if(MotionDetected){
+            cout<<"Turn on this lights with 100% Brightness..";
+        }
+        else {
+            cout<<"Turn on this lights with 10% Brightness..";
+        }
+    }
+    else {
+        cout<<"Turn OFF the lights";
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------
+
+
+ // PRBLM 8 -- CUSTOMER SUPPORT IVR SYSTEM
+ // 1 -- SUPPORT
+ // 2 -- FOR BILLING
+ // 3 --TECHNICAL ISSUES
+ // 4 - TALK TO THE AGENT
+ 
+ #include <iostream>
+ using namespace std;
+   int main (){
+       int choice;
+       cout<<"ENTER THE NUMBER : ";
+       cin>>choice;
+       
+       switch(choice){
+           
+           case 1:
+           cout<<" Transferring call to Customer SUPPORT";
+           break;
+           
+           
+           case 2:
+           cout<<"Transferring call FOR BILLING";
+           break;
+           
+           case 3:
+           cout<<"Transferring call to TECHNICAL Help Desk";
+           break;
+           
+           case 4:
+           cout<<"TALK TO THE AGENT";
+           break;
+           
+           default :
+           cout<<"Invalid SELECTION ";
+       }
+       return 0;
+   }
