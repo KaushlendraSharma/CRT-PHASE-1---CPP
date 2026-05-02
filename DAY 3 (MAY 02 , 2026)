@@ -158,5 +158,33 @@ int main(){
 }
 
 -------------------------------------------------------------------
+//PROBLEM 8 - FIBONACCI SERIES
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int n ;
+    cout<<"GIVE YOUR INPUT : ";
+    cin>>n;
+    
+    int a = 0;
+    int b = 1;
+    int c;
+    
+    cout<<"SERIES IS : ";
+    for (int i = 0; i<n ; i++){
+        cout<<a<<" ";
+        
+        c = a+b;
+         a = b;
+         b = c;
+         c = a;
+    }
+    return 0;
+}
 
 
