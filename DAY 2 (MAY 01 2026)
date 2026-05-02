@@ -337,5 +337,40 @@ int main(){
 
 -------------------------------------------------------------------------
 
+// HW 5 - ATM WITHDRAW CHECKER
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    
+    const string userID = "MK1329";
+    const int password = 1329;
+    
+    string input_userID;
+    int inp_password;
+    cout<<"ENTER USER ID : ";
+    cin>>input_userID;
+    cout <<"ENTER PASSWORD : ";
+    cin>>inp_password;
+    int AvlAmount = 8000;
+    int ReqAmout;
+    
+    
+    if (userID==input_userID && password==inp_password ){
+        cout<<"REQUIRED AMOUNT : " ;
+    cin>>ReqAmout;
+        if(ReqAmout<=AvlAmount){
+            cout<<"TRANSACTION IS DONE";
+        }
+        else {
+            cout<<"INVALID TRANSACTION";
+        }
+    }
+    else {
+            cout<<"WRONG CREDENTIALS";
+        }
+        return 0;
+    }
 
 
