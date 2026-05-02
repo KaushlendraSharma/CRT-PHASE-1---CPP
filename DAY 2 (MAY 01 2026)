@@ -197,3 +197,92 @@ int main(){
        }
        return 0;
    }
+
+-------------------------------------------------------------------------------------------------------------------
+
+// HW - 1 -- GRADE CHECK
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    
+    char Grade;
+    cin>>Grade;
+    
+    switch (Grade) {
+        
+        case 'A' :
+        cout<<"PERFECT SCORE";
+        break;
+        
+        case 'B' :
+        cout<<"GOOD SCORE";
+        break;
+        
+        case 'C' :
+        cout<<" AVERAGE SCORE";
+        break;
+        
+        case 'F' :
+        cout<<"FAIL";
+        break;
+        
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------
+
+// HW - 2 -- DAY NAME
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    
+     int Day;
+    cin>>Day;
+    
+    switch (Day) {
+        
+        case 1 : 
+        cout<<"MONDAY";
+        break;
+        
+        case 2 : 
+        cout<<"TUESDAY";
+        break;
+        
+        case 3 : 
+        cout<<"WEDNESDAY";
+        break;
+        
+        case 4 : 
+        cout<<"THRUSDAY";
+        break;
+        
+        case 5 : 
+        cout<<"FRIDAY";
+        break;
+        
+        case 6 : 
+        cout<<"SATURDAY";
+        break;
+        
+        case 7 : 
+        cout<<"SUNDAY";
+        break;
+        
+        default :
+        cout<<"NOT A DAY";
+    }
+    return 0;
+}
+
+
