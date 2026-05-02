@@ -285,4 +285,32 @@ int main(){
     return 0;
 }
 
+------------------------------------------------------------------------------
+
+// HW - 3 -- leap Year Check
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    
+     int Days;
+     
+    cin>>Days;
+    
+    
+    if (Days == 366) {
+        
+        cout<<"LEAP YEAR";
+    }
+    else {
+        
+        cout<<"NOT A LEAP YEAR";
+    }
+    return 0;
+}
+    
 
