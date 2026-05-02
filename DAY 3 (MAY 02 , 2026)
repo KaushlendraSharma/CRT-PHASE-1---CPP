@@ -260,3 +260,83 @@ int main (){
     cout <<"Glass is full with water : "<< currentWater <<"ml."<<"\n";
     return 0;
     }
+
+===================================================================================
+
+HOME WORK DAY 3
+// MULTIPLICATION TABLE
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int n;
+    cout<<"ENTER NUMBER TO PRINT TABLE : ";
+    cin>>n;
+    int tableResults;
+    
+     for(int i =1; i<=10;i++ ){
+         cout<<n<<" * "<<i<<" = ";
+         tableResults = n*i;
+         cout<<tableResults<<"\n";
+     }
+    
+    return 0;
+}
+
+--------------------------------------------------------------------------
+
+// Countdown Timer
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int n;
+    cout<<"ENTER NUMBER TO START COUNTDOWN : ";
+    cin>>n;
+    
+    cout<<"Countdown Starts now - "<<"\n";
+    
+    for(int i =n; i>=0 ;i--){
+        
+        cout << i <<"\n";
+    }
+    return 0;
+}
+
+------------------------------------------------------------------------------
+
+// ATM PIN CHECKER 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    const string ID = "PIKACHU";
+    const int password = 6677;
+    
+    string inpID;
+    
+    int inpPass;
+    
+    do{
+        cout<<"INPUT ID : ";
+    cin>>inpID;
+    
+    cout<<"INPUT Password : ";
+    cin>>inpPass;
+    
+        if(inpID != ID || inpPass != password){
+            cout << "INVALID, Try Again...\n";
+        }
+    }
+    while(inpID!=ID || inpPass!=password);
+    cout << "VERIFICATION SUCCESSFULL";
+    
+    return 0;
+}
