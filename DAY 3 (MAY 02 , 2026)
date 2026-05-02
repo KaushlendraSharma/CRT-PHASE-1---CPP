@@ -222,3 +222,22 @@ int main()
     }
     return 0;
 }
+--------------------------------------------------------------------------
+
+//PRB 10 - SMART PHONE UNLOCK -- 
+//TRY TO UNLOCK THE PHONE UNTILL WE GET COREECT PASSWORD
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    
+    int password;
+    do{
+        cout<<"Enter the password : ";
+        cin>>password;
+    }
+    while(password !=1234);
+    cout << "PHONE UNLOCKED !....";
+        return 0;
+    }
