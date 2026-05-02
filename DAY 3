@@ -1,0 +1,134 @@
+// PROBLEM 1 -- Print 1 to n (FOR LOOP)
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+cout<<"ENTER THE NUMBER OF ITERATIONS : ";
+cin>>n;
+    for (int i=1 ; i<=n ;i++){
+        cout << i <<"\n";
+    }
+     return 0;
+}
+
+-----------------------------------------------------------------------------
+
+// PROBLEM 2 -- Print n to 1 (USING FOR LOOP)
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+cout<<"ENTER THE NUMBER OF ITERATIONS : ";
+cin>>n;
+    for (int i=n ; i>=1 ;i--){
+        cout << i <<"\n";
+    }
+     return 0;
+}
+
+------------------------------------------------------------------------
+
+// PROBLEM 3 -- Print 1 to n (USING WHILE LOOP)
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+cout<<"ENTER THE NUMBER OF ITERATIONS : ";
+cin>>n;
+  int i = 1;
+  while (i<=n){
+      
+      cout<<i<<"\n";
+      i++;
+  }
+    
+     return 0;
+}
+
+------------------------------------------------------------
+
+// PROBLEM 4 -- Print n to 1 (USING WHILE LOOP)
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+cout<<"ENTER THE NUMBER OF ITERATIONS : ";
+cin>>n;
+  int i = n;
+  while (i>=1){
+      
+      cout<<i<<"\n";
+      i--;
+  }
+    
+     return 0;
+}
+--------------------------------------------
+
+// PROBLEM 5 -- Print 1 to N (USING DO-WHILE LOOP)
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+cout<<"ENTER THE NUMBER OF ITERATIONS : ";
+cin>>n;
+  int i = 1;
+  
+    do {
+        cout<<i<<"\n";
+        i++;
+    }
+    while(i<=n);
+     return 0;
+}
+
+------------------------------------------------------
+
+// PROBLEM 6 -- Print n to 1 (USING DO-WHILE LOOP)
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+cout<<"ENTER THE NUMBER OF ITERATIONS : ";
+cin>>n;
+  int i = n;
+  
+    do {
+        cout<<i<<"\n";
+        i--;
+    }
+    while(i>=1);
+     return 0;
+}
+    
