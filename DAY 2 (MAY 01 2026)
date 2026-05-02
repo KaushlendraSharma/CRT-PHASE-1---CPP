@@ -312,5 +312,30 @@ int main(){
     }
     return 0;
 }
-    
+
+----------------------------------------------------------------------------
+// HW 4 - EVEN or ODD check
+ 
+ #include <iostream>
+ using namespace std;
+ 
+ int main(){
+ 
+ int number;
+ cout<<"ENTER NUMBER : ";
+ cin>>number;
+ 
+ if (number%2==0){
+     cout<<" NUMBER IS EVEN ";
+ }
+ else {
+     cout<<" NUMBER IS ODD ";
+ }
+ 
+ }
+
+
+-------------------------------------------------------------------------
+
+
 
