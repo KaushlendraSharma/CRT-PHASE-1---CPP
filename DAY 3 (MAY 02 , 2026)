@@ -241,3 +241,22 @@ int main (){
     cout << "PHONE UNLOCKED !....";
         return 0;
     }
+___________________________________________________________________________
+
+//PRB 11 - WATER JAR FILLER (WHILE)
+
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    int currentWater = 0;
+    int add;
+    while(currentWater < 500){
+        cout<<"Glass Has "<<currentWater<<"ml. and how much?"<<"\n";
+        cin>>add;
+        currentWater = currentWater + add;
+    }
+    cout <<"Glass is full with water : "<< currentWater <<"ml."<<"\n";
+    return 0;
+    }
