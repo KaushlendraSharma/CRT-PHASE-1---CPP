@@ -131,4 +131,32 @@ cin>>n;
     while(i>=1);
      return 0;
 }
+
+------------------------------------------------------------------
+
+// PROBLEM 7 -- FACTORIAL OF A NUMBER
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
     
+    int n;
+    cout<<"ENTER THE VALUE : ";
+    cin>>n;
+    long fact = 1;
+     for (int i = 1; i<=n ; i++){
+         
+         fact *=i;
+         
+     }
+    cout<<"FACTORIAL IS : "<< fact;
+    return 0;
+}
+
+-------------------------------------------------------------------
+
+
