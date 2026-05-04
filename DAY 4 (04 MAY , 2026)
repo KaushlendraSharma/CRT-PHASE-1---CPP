@@ -17,6 +17,7 @@ int main(){
 }
 
 ------------------------------------------------------------------------------------------
+
 // PROBLEM 2 -- >> Square Pattern Print (Using Nested Looping)
 
 #include <iostream>
@@ -60,5 +61,35 @@ int main(){
     }
     return 0;
 }
+
+------------------------------------------------------------------------
+// PROBLEM 4 -- >> Vertically Mirrored Right Angled Triangle (Using Nested Looping)
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int n = 5;
+    
+    for (int i =1; i<=n ;i++ ){
+        for(int j=n-i ; j>=1 ; j--){
+            cout<<" ";
+        }
+        for (int k= 1; k<=i ; k++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
+
+
 
 ----------------------------------------------------------------------------------
