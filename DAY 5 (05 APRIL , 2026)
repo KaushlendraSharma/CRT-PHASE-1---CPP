@@ -51,3 +51,25 @@ int main(){
     return 0;
 }
 
+--------------------------------------------------------------------------------------
+
+# **FUNCTIONS**
+
+// problem 2
+// FUNCTIONS declaration and initialization
+
+ #include <iostream>
+ using  namespace std;
+ 
+ void PrintMessage (){
+     
+ cout << "Jai Mata Di";
+ 
+ }
+ 
+ int main(){
+     
+     
+     PrintMessage();
+     return 0;
+ }
