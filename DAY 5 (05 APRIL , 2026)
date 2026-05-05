@@ -52,8 +52,7 @@ int main(){
 }
 
 --------------------------------------------------------------------------------------
-
-# FUNCTIONS
+FUNCTIONS
 
 // problem 2
 // FUNCTIONS declaration and initialization
@@ -93,3 +92,78 @@ int main(){
       cout<<areaOfRectangle;
       return 0;
  }
+
+
+---------------------------------------------------------------------------
+
+// PROBLEM 4.1 - Types of FUNCTIONS
+
+ // NO ARGUEMENT , NO RETURN TYPE
+ 
+ #include <iostream>
+ using  namespace std;
+ 
+ void  DoorBell(){
+     
+ cout<<"DING-DONG";
+ }
+ 
+ int main(){
+     DoorBell();
+      return 0;
+ }
+
+
+----------------------------------------------------------------------------
+
+// PROBLEM 4.2 - Types of FUNCTIONS
+ //  ARGUEMENT , NO RETURN TYPE
+ 
+ #include <iostream>
+ using  namespace std;
+ 
+ void  sendText(string message){
+     
+ cout<<message;
+ }
+ 
+ int main(){
+    sendText("BJP Wins....");
+      return 0;
+ }
+-------------------------------------------------------------------------------
+
+// PROBLEM 4.3 - Types of FUNCTIONS
+ //  ARGUEMENT , NO RETURN TYPE
+ 
+ #include <iostream>
+ using  namespace std;
+ 
+ int ticketNumber(){
+     
+ return 101;
+ }
+ 
+ int main(){
+    cout<<ticketNumber();
+      return 0;
+ }
+
+------------------------------------------------------------------------------
+ // PROBLEM 4.4 - Types of FUNCTIONS
+ //  ARGUEMENT , RETURN TYPE
+ 
+ #include <iostream>
+ using  namespace std;
+ 
+ double currencyConversion(double AmountINR){
+     
+     return (AmountINR/100.0);
+ 
+ }
+ 
+ int main(){
+    cout<<currencyConversion(675);
+      return 0;
+ }
+
