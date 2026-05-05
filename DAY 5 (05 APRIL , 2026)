@@ -73,3 +73,23 @@ int main(){
      PrintMessage();
      return 0;
  }
+
+---------------------------------------------------------------------------
+
+// PROBLEM 3 - AREA OF RECTANGLE
+ 
+ #include <iostream>
+ using  namespace std;
+ 
+ int  Area(int b , int l){
+     
+ return b*l;
+ }
+ 
+ int main(){
+      int length = 10;
+      int width = 4;
+      int areaOfRectangle = Area(length,width);
+      cout<<areaOfRectangle;
+      return 0;
+ }
