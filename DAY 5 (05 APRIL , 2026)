@@ -134,7 +134,7 @@ FUNCTIONS
 -------------------------------------------------------------------------------
 
 // PROBLEM 4.3 - Types of FUNCTIONS
- //  no ARGUEMENT , NO RETURN TYPE
+ //  no ARGUEMENT ,  RETURN TYPE
  
  #include <iostream>
  using  namespace std;
