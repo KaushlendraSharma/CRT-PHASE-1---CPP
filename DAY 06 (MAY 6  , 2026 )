@@ -132,3 +132,59 @@ int main (){
     setTemperature("TURBO"); // set Temperature 18
 }
 
+------------------------------------------------------------------------------------
+
+//Program 6 -- Class and Objects
+
+
+
+#include <iostream>
+using namespace std;
+
+ class Student{
+    public :
+    string name;
+    int age;
+    
+    void Introduce(){
+        cout<<"Hi there , this person name is "<<name<<" and his age is "<<age<<"."<<"\n";
+    }
+    
+};
+
+int main (){
+    
+    Student s1,s2; 
+    s1.name = "ABHISHEK";
+    s1.age = 24;
+    s1.Introduce();
+    s2.name = "AMAN";
+    s2.Introduce();
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+//PROBLEM 7 -- ACCESS MODIFIER
+//PUBLIC --- 7.1
+
+
+
+    #include <iostream>
+   using namespace std;
+   
+   class PublicPark{
+       
+       public :
+       void enter (){
+           cout<<"ANYONE CAN ENTER IN THE ROOM";
+           
+       }
+       
+   };
+int main(){
+    
+    PublicPark p;
+    p.enter();
+    
+}
