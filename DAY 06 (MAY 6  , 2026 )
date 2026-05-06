@@ -76,3 +76,59 @@ int main(){
     return 0;
     
 }
+-------------------------------------------------------------------------------------------
+// Problem -- 04
+// Coffee AMout calculation
+
+#include <iostream>
+using namespace std;
+
+
+int CoffeAmnt(int ChocolateCoffee,int CaramelCoffee,int HotCoffee,int HazelNutCoffee){
+    return ( ChocolateCoffee+ CaramelCoffee+HotCoffee+ HazelNutCoffee);
+}
+
+
+int main(){
+    
+    
+    
+    cout<<"COFFEE TOTAL : "<< CoffeAmnt(40,50,60,90);
+    
+    return 0;
+    
+}
+
+-----------------------------------------------------------------------------
+
+
+//Problem - 05 >> Smart Ac Remote
+
+//FUnction Overloading //Defalut Arguements;
+
+#include <iostream>
+using namespace std;
+
+void setTemperature(int temp = 20){
+    cout<<"TEMPERATURE SET TO "<<temp<<"°"<<"\n";
+}
+
+void setTemperature(double temp){
+    cout<<"TEMPERATURE SET TO "<<temp<<"°"<<"\n";
+}
+void setTemperature(string mode){
+    if (mode == "ECO"){
+        cout<<"TEMPERATURE SET TO 24° C"<<"\n";
+    }
+    else {
+         cout<<"TEMPERATURE SET TO 18° C"<<"\n";
+    }
+}
+
+int main (){
+    setTemperature (); //Default Value -- 22
+    setTemperature(20.5); //Manually Setting The Temperature
+    setTemperature("ECO"); // set Temperature to 24
+    setTemperature("TURBO"); // set Temperature 18
+}
+
