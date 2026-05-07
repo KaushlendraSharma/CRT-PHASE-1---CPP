@@ -247,4 +247,11 @@ int main(){
    
 return 0;
     }
-    
+
+============================================================================
+
+//  Problem 3 -- Pillars of OOPS
+//  3.2 >> Abstraction : Means hiding the implentation and showing only the essential features to the users
+// ABSTRACT CLASS - class cannot be initialized and it is formed by abstract keyword
+// ABSTRACT KEYWORD - there is not initialisation of the abstarct methods.
+
