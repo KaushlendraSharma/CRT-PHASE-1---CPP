@@ -1,0 +1,180 @@
+// Problem 7 
+//Access Specifier 
+//7.2 Public
+
+
+#include <iostream>
+using namespace std;
+
+
+class BankAccount {
+    private :
+    int Balance = 5000;
+    
+    public :
+    void ShowBalance(){
+        cout<<"Blance in your account is : "<<Balance;
+    }
+};
+
+int main (){
+    
+    BankAccount myAccount;
+    
+    myAccount.ShowBalance();
+    
+}
+
+====================================================================================
+
+// Problem 7
+//Access Specifier 
+//7.3 Protected 
+
+#include <iostream>
+using namespace std;
+
+
+class Parent {
+    protected :
+    int secretCode = 1234;
+};
+
+class child : public Parent{
+    public :
+    void accessOfSecretCode(){
+        cout<<"Secret code of the locker is "<<secretCode;
+    }
+};
+
+int main(){
+    
+    child Obj1;
+    Obj1.accessOfSecretCode();
+}
+
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+                                           CONSTRUCTORS
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+//Problem 2 - Constructors
+// 2.1 - Default
+// 2.2 - Parameterized
+// 2.3 - Copy
+
+// 2.1 DEFALUT Constructor
+
+
+#include <iostream>
+using namespace std;
+
+class wifiConnection{
+    
+    public :
+    string wifiID;
+    string Password;
+    
+    wifiConnection (){
+        wifiID = "JAI MATA DI";
+        Password = "JOR SE BOLO";
+    }
+    public : 
+    void DisplayDetails(){
+        cout<<wifiID<<"\n"<<Password;
+    }
+};
+
+int main (){
+    
+    wifiConnection S1;
+    S1.DisplayDetails();
+    return 0;
+}
+
+--------------------------------------------------------------------------
+
+//Problem 2 - Constructors
+// 2.1 - Default
+// 2.2 - Parameterized
+// 2.3 - Copy
+
+// 2.2 Parameterized Constructor
+
+
+// #include <iostream>
+// using namespace std;
+
+// class StudentDetails {
+// public :
+// 	string Name;
+// 	int ID;
+
+
+
+// 	StudentDetails (string StdName, int StdID) {
+// 		Name = StdName;
+// 		ID = StdID;
+// 	}
+// public :
+// 	void DisplayDetails() {
+// 		cout<<Name<<"\n"<<ID;
+// 	}
+// };
+
+// int main () {
+
+// 	StudentDetails S1("MANNU", 1234);
+// 	S1.DisplayDetails();
+
+// 	return 0;
+// }
+
+
+====================================================================================
+                            -O-O-P-S-
+====================================================================================
+
+
+// Problem 3 -- Pillars of OOPS
+// Encapsulation -- Means we are binding the data (function , variables , data members)into a single unit class called
+//class and making some restrictions on this class members , has controlled access by using acces specifiers .
+
+
+// Data Security || Controlled access over my Data || Validation before accessing the Data || Code Maintainability
+
+#include <iostream>
+using namespace std;
+
+class bankAccount {
+private :
+	int balance;
+
+
+
+
+public :
+	void setBalance(int amount)
+	{
+		if (amount >=0) {
+			balance = amount;
+		}
+		else {
+			cout<<"Enter A VALID amount";
+		}
+	}
+
+
+
+public :
+	int getBalance () {
+		return balance;
+	}
+};
+
+int main() {
+ bankAccount Acc1;
+ Acc1.setBalance(50000);
+ cout<<Acc1.getBalance();
+
+}
