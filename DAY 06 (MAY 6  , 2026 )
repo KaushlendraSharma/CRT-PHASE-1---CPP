@@ -188,3 +188,50 @@ int main(){
     p.enter();
     
 }
+
+--------------------------------------------=========================-----------------------------------
+
+HOME WORK - STORE DISCOUNT APPLICATION
+
+
+#include <iostream>
+using namespace std;
+
+double SpecialDiscount(double Amount){
+
+    if (Amount >= 10000.0){
+        return Amount * 0.20;
+    }
+    else if (Amount >= 5000.0){
+        return Amount * 0.10;
+    }
+    else if (Amount >= 2000.0){
+        return Amount * 0.05;
+    }
+    else{
+        return Amount*0;
+    }
+    
+}
+
+
+
+double Bill ( double Amount){
+    
+    
+    double finalAmount = (Amount - SpecialDiscount(Amount));
+    return finalAmount;
+    
+}
+
+
+
+int main(){
+    
+    double Amount = 3456.0;
+    double finalAmount = Bill(Amount);
+    cout<<finalAmount;
+
+   
+    return 0;
+}
