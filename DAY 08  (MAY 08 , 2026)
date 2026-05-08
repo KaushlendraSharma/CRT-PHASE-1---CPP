@@ -1,0 +1,77 @@
+// DAY 08 - MAY 08 , 2026
+// PROBLEM 1 >> PILLARS OF OOPS 
+
+
+==================================================
+             -I-N-H-E-R-I-T-A-N-C-E-
+==================================================
+
+
+// Inheritance >> 1.1 >> Single Inheritance
+
+
+#include <iostream>
+using namespace std;
+
+class Vehicle{
+    public :
+    void Start(){
+        cout<<"vehicle Starts !"<< "\n";
+    }
+};
+
+class Car : public Vehicle {
+    public :
+    void drive(){
+        cout<<"Vehicle is running !"<<"\n";
+    }
+};
+
+
+int main(){
+    Car obj1;
+    obj1.drive();
+    obj1.Start();
+ return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+// PROBLEM >> PILLARS OF OOPS 
+
+// Inheritance >> 1.2 >> Multilevel Inheritance
+
+
+#include <iostream>
+using namespace std;
+
+class Vehicle{
+    public :
+    void Start(){
+        cout<<"vehicle Starts !"<< "\n";
+    }
+};
+
+class Car : public Vehicle {
+    public :
+    void drive(){
+        cout<<"Vehicle is running !"<<"\n";
+    }
+};
+
+class speedoMeter : public Car{
+    
+    public :
+    void Speed (){
+        cout<<"Car is running at a speed of 500 km/Hr"<<"\n";
+    }
+};
+
+
+int main(){
+    speedoMeter obj1;
+    obj1.drive();
+    obj1.Start();
+    obj1.Speed();
+ return 0;
+}
