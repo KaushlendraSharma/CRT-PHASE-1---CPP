@@ -204,4 +204,99 @@ return 0;
 }
 
 
+===================================================================
+                       -P-o-l-y-m-o-r-p-h-i-s-m
+===================================================================
 
+//// PROBLEM >> PILLARS OF OOPS 
+
+// Polymorphism 
+
+// Polymorphism means one name but many forms , same function behaves differently depend the type of object it called.
+
+// 2.1 -- Compile-time Polymorphism
+
+ #include <iostream>
+ using namespace std;
+ 
+ 
+ class Math{
+     
+     public :
+     void Multiply(){
+         cout<<"MULTIPLICATION IS - ";
+     
+     }
+ double Multiply(double x , double y , int z){
+     return x*y*z;
+ }
+ 
+int Multiply (int x, int y , int z){
+     return x*y*z;
+ }
+ 
+ int Multiply(int x , int y ){
+     return x*y;
+ }
+ };
+ 
+ int main(){
+     
+     Math F1;
+     F1.Multiply();
+     cout<<F1.Multiply(2.6,4.7,5);
+     
+     return 0;
+ }
+
+---------------------------------------------------------------------------------------
+
+//// PROBLEM >> PILLARS OF OOPS 
+
+// Polymorphism 
+
+// Polymorphism means one name but many forms , same function behaves differently depend the type of object it called.
+
+// 2.2 -- Run Polymorphism / Overidding
+
+ 
+
+#include <iostream>
+using namespace std;
+
+class Animal{
+    
+    public : 
+    virtual void  sound(){
+        cout<<"Animal makes a sound \n";
+    }
+    
+};
+
+class Dog : public Animal{
+    
+    public : 
+    void  sound() override {
+        cout<<"Dog makes a sound \n";
+    }
+    
+};
+
+class Cat : public Animal{
+    
+    public : 
+    void  sound() override {
+        cout<<"Cat makes a sound \n";
+    }
+    
+};
+
+int main(){
+    
+    Dog D;
+    Cat C;
+    C.sound();
+    
+    D.sound();
+    return 0;
+}
