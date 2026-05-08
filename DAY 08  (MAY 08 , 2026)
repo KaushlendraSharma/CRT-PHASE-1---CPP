@@ -75,3 +75,82 @@ int main(){
     obj1.Speed();
  return 0;
 }
+
+--------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+class Vehicle{
+    public :
+    void Start(){
+        cout<<"vehicle Starts !"<< "\n";
+    }
+};
+
+class Car : public Vehicle {
+    public :
+    void drive(){
+        cout<<"Car is running !"<<"\n";
+    }
+};
+
+class AeroPlane : public Vehicle {
+    
+    public :
+    void Fly (){
+        cout<<"Aeroplane is flying"<<"\n";
+    }
+};
+
+
+int main(){
+   AeroPlane obj1;
+   Car obj2;
+   
+   obj1.Fly();
+   obj2.drive();
+   
+ return 0;
+}
+
+--------------------------------------------------------------------------
+
+// PROBLEM >> PILLARS OF OOPS 
+
+// Inheritance >> 1. 4 >> Multiple Inheritance
+
+#include <iostream>
+using namespace std;
+
+class Parent1{
+    public :
+    void Mannu(){
+        cout<<"Mannu to pyari Ladki hai";
+    }
+};
+
+class Parent2{
+    public :
+    void Mannu(){
+        cout<<"Mannu to Sundar bhi hai \n";
+    }
+    void Kritika(){
+        cout<<"Kritika to pagal Ladki hai \n";
+    }
+};
+
+class Compare : public Parent1 ,  public Parent2{
+    
+};
+
+int main(){
+    
+    Compare obj1;
+    obj1.Parent2::Mannu();
+    obj1.Kritika();
+    obj1.Parent1::Mannu();
+    return 0;
+}
+
+
