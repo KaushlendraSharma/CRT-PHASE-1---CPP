@@ -152,5 +152,56 @@ int main(){
     obj1.Parent1::Mannu();
     return 0;
 }
+-----------------------------------------------------------------------------------------------------
+
+// PROBLEM >> PILLARS OF OOPS 
+
+// Inheritance >> 1. 5>> Hybrid  Inheritance
+
+-D-I-A-M-O-N-D- -P-R-O-B-L-E-M-
+
+
+
+ #include <iostream>
+ 
+using namespace std;
+
+
+class A{
+    
+    public :
+    void NillaMon (){
+        cout<<"NILLA DARINDA - DORAEMON \n";
+    }
+    
+};
+
+class B : virtual public A{
+    
+   //no logic
+    
+};
+
+class C : virtual public A{
+    
+   //no logic
+    
+};
+
+class D : public B, public C{
+    
+   //no logic
+    
+};
+
+int main(){
+    
+    D  Doraemon;
+
+    Doraemon.NillaMon();
+
+return 0;
+}
+
 
 
