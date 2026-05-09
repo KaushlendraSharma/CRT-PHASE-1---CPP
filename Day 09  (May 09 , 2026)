@@ -98,3 +98,28 @@ int main (){
 
 
 
+=====================================================================
+                 DATA STRUCTURES and ALGORITHM
+=====================================================================
+                               ARRAY
+=====================================================================
+
+// Problem 01 >> 
+//Introduction to arrays + traversal + Memory Layout
+// - Array Traversal + Memory address
+
+#include <iostream>
+using namespace std;
+
+void traversal (int arr[] , int size ){
+    for (int i = 0 ; i<size ; i++){
+        cout<<arr[i]<<" "<<&arr[i]<<"\n";
+        
+    }
+}
+
+int main(){
+    int arr[] = {10,20,30,40,50};
+    traversal (arr , 5);
+    return 0;
+}
