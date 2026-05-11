@@ -1,0 +1,32 @@
+// PROBLEM 1 - CHECK PALINDROME
+  
+    #include <iostream>
+    using namespace std;
+    
+    void isPalindrome(string S){
+        
+        int start = 0;
+        int end =  S.size()-1;
+        while (start<end)
+        {
+            
+            if(S[start] != S[end]){
+                cout<<"String is not Palindrome ! ";
+                return;
+            }
+            start++;
+            end--;
+            
+        }
+        cout<<"String is Palindrome ! ";
+        
+    }
+    
+    int main(){
+        string S;
+        cout<<"Enter String : ";
+        cin>>S;
+        
+        isPalindrome(S);
+        
+    }
