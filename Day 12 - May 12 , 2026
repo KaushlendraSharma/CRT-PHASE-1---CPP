@@ -32,3 +32,28 @@
   int main (){
       PrintNumber(1);
   }
+
+
+-------------------------------------------------------------------------------
+
+// DAY 12 - RECUSRSION
+  
+  // PROBLEM 2  -- Print Factorial of a number
+  
+  
+  #include <iostream>
+  using namespace std;
+  
+  
+  int FactorialOf(int n){
+      if (n==0 || n==1){
+          return 1;
+      }
+      
+      return n*FactorialOf(n-1);
+    
+  }
+  
+  int main (){
+      cout<<FactorialOf(5);
+  }
