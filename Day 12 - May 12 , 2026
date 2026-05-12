@@ -1,1 +1,34 @@
 
+
+     
+     █▀█ █▀▀ █▀▀ █ █ █▀█ █▀ █ █▀█ █▄ █
+     █▀▄ ██▄ █▄▄ █▄█ █▀▄ ▄█ █ █▄█ █ ▀█
+
+
+
+// DAY 12 - RECUSRSION
+  
+  
+  // PROBLEM 1  -- Print numbers from 1 to 10
+  
+  
+  
+  
+  #include <iostream>
+  using namespace std;
+  
+  
+  void PrintNumber(int n){
+      if (n>10){
+          return;
+      }
+      cout<<"   "<<n<<"\n";
+      
+      PrintNumber(n+1);
+      
+      
+  }
+  
+  int main (){
+      PrintNumber(1);
+  }
