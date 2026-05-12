@@ -100,3 +100,30 @@ int climbStairs(int n) {
         
     }
 };
+
+=------------------------------------------------------------------------------
+
+
+  // DAY 12 - RECUSRSION
+  // PROBLEM 5  -- total possibilities of binary string with no consecutive 1
+  
+  
+  #include <iostream>
+  using namespace std;
+  
+  
+  int TotalPos (int n ) {
+      if(n==1){
+          return 2;
+      }
+      else if(n==2){
+          return 3;
+      }
+      
+      return TotalPos(n-2) + TotalPos(n-1);
+  }
+  
+ int main(){
+     
+     cout<<TotalPos(5);
+ }
