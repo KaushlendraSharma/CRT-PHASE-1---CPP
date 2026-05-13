@@ -14,3 +14,31 @@ int TotalPos (int n ) {
      
      cout<<TotalPos(7);
  }
+-----------------------------------------------
+
+
+# LEET CODE - 198 ( HOUSE ROBBER QUESTION)
+class Solution {
+
+    int favCase(vector<int>& nums, int i) {
+
+        
+        if (i >= nums.size()) {
+            return 0;
+        }
+
+        
+        int rob = nums[i] + favCase(nums, i + 2);
+
+        
+        int skip =favCase(nums, i + 1);
+
+        
+        return max(rob, skip);
+    }
+
+public:
+    int rob(vector<int>& nums) {
+       return favCase(nums, 0);
+    }
+};
